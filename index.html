@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Sport - Fotografia Esportiva</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo/Logo-Focus-Mini-PNG.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="top"></div>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#top" class="logo-link">
+                    <img src="assets/logo/Logo-Focus-Mini-PNG.png" alt="Focus Sport" class="logo-image">
+                </a>
+            </div>
+            
+            <!-- Menu Desktop -->
+            <nav class="nav-desktop">
+                <div class="nav">
+                    <div class="container-nav">
+                        <div class="btn" data-section="portfolio">Portfólio</div>
+                        <div class="btn" data-section="sobre">Sobre</div>
+                        <div class="btn" data-section="contato">Contato</div>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 400 60"
+                            height="60"
+                            width="400"
+                            overflow="visible"
+                            class="outline"
+                        >
+                            <rect
+                                stroke-width="5"
+                                fill="transparent"
+                                height="60"
+                                width="400"
+                                y="0"
+                                x="0"
+                                pathLength="100"
+                                class="rect"
+                            ></rect>
+                        </svg>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Menu Mobile -->
+            <nav class="nav-mobile">
+                <label class="hamburger">
+                    <input type="checkbox" id="hamburger-toggle">
+                    <svg viewBox="0 0 32 32">
+                        <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                        <path class="line" d="M7 16 27 16"></path>
+                    </svg>
+                </label>
+                
+                <div class="mobile-menu" id="mobile-menu">
+                    <a href="#portfolio" class="mobile-link">Portfólio</a>
+                    <a href="#sobre" class="mobile-link">Sobre</a>
+                    <a href="#contato" class="mobile-link">Contato</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">FOCUS SPORT</h1>
+                <p class="hero-subtitle">Capturando a ação.</p>
+                <p class="hero-description">Fotografia esportiva com abordagem ousada, intensa e dinâmica</p>
+                <a href="#portfolio" class="cta-button">Ver Portfólio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfólio</h2>
+            
+            <!-- Filtros -->
+            <div class="filters">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Buscar eventos...">
+                </div>
+                
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="todos">Todos</button>
+                    <button class="filter-btn" data-category="futsal">Futsal</button>
+                    <button class="filter-btn" data-category="volei">Vôlei</button>
+                    <button class="filter-btn" data-category="corrida">Corrida</button>
+                    <button class="filter-btn" data-category="ciclismo">Ciclismo</button>
+                    <button class="filter-btn" data-category="futebol">Futebol</button>
+                    <button class="filter-btn" data-category="outros">Outros</button>
+                </div>
+                
+                <div class="date-filter">
+                    <div class="date-inputs">
+                        <div class="date-field">
+                            <label for="date-start">Data Inicial</label>
+                            <input type="date" id="date-start" class="date-picker">
+                        </div>
+                        <div class="date-field">
+                            <label for="date-end">Data Final</label>
+                            <input type="date" id="date-end" class="date-picker">
+                        </div>
+                    </div>
+                    <button id="clear-dates" class="clear-dates-btn">Limpar Filtros</button>
+                </div>
+            </div>
+
+            <!-- Grid de Cards -->
+            <div class="cards-grid" id="cards-grid">
+                <!-- Cards serão inseridos via JavaScript -->
+            </div>
+
+            <!-- Botão Ver Mais -->
+            <div class="load-more">
+                <button id="load-more-btn" class="load-more-btn">Ver Mais</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <div class="sobre-content">
+                <h2 class="section-title">Sobre a Focus Sport</h2>
+                <div class="sobre-text">
+                    <p>A Focus Sport é a divisão do grupo especializada em fotografia esportiva, com uma abordagem ousada, intensa e dinâmica. Ela representa o instante em que tudo acontece — o gol, o salto, o sprint final — o segundo exato que muda o jogo.</p>
+                    <p>Nossa missão é capturar não apenas imagens, mas emoções, momentos únicos que contam histórias através da lente. Cada clique é uma oportunidade de eternizar a paixão pelo esporte.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2 class="section-title">Contato</h2>
+            <div class="contato-content">
+                <div class="contato-info">
+                    <h3>Entre em contato</h3>
+                    <p>Para agendar uma sessão ou solicitar informações sobre nossos serviços:</p>
+                    <a href="https://banlek.com/focus.sport" target="_blank" rel="noopener noreferrer" class="contato-item">
+                        <strong>Portfólio:</strong> banlek.com
+                    </a>
+                    <a href="https://wa.me/5588981903220" target="_blank" rel="noopener noreferrer" class="contato-item">
+                        <strong>WhatsApp:</strong> (88) 98190-3220
+                    </a>
+                    <a href="https://www.instagram.com/focus.sport.br/" target="_blank" rel="noopener noreferrer" class="contato-item">
+                        <strong>Instagram:</strong> @focussport
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Focus Sport. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/events.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html> 

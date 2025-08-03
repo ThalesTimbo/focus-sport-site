@@ -1,0 +1,35 @@
+{
+  "name": "focus-sport-portfolio",
+  "version": "1.0.0",
+  "description": "Site de portfólio moderno e responsivo para a marca Focus Sport, especializada em fotografia esportiva",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --port=3000 --open=/",
+    "build": "sass assets/scss/main.scss:assets/css/style.css --style compressed",
+    "watch": "sass assets/scss/main.scss:assets/css/style.css --watch",
+    "serve": "npm run build && npm run dev"
+  },
+  "keywords": [
+    "portfolio",
+    "sports",
+    "photography",
+    "responsive",
+    "modern",
+    "focus-sport"
+  ],
+  "author": "Focus Sport",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.69.0"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/focus-sport/portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/focus-sport/portfolio/issues"
+  },
+  "homepage": "https://focus-sport.com"
+} 
